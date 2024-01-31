@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação</title>
+    <link rel="preconnect" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/center">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: white;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar {
+        display: none;
+        }
+        .cabecalho{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            background-color: #162028;
+        }
+        nav{
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            align-items: center;
+            margin: 0;
+        }
+        h1{
+            font-size: 45px;
+            margin: 0;
+        }
+        h2{
+            font-size: 50px;
+            font-family: 'Arial', sans-serif;
+        }
+        .img_topo{
+            position: relative;
+            width: 100%;
+            top: -100px;
+        }
+        .txt_menu{
+            color: white;
+            text-decoration: none;
+        }
+        .img_cab{
+            background-color: #003d52;
+            overflow: hidden;
+            height: 600px;
+        }
+        section{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            justify-content: center;
+            text-align: center;
+            width: 85%;
+            height: 300px;
+            padding: 0rem;
+        }
+        .textos{
+            font-size: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #555;
+        }
+        .img_opcoes{
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            gap: 1rem;
+        }
+        .imgs_align{
+            display: flex;
+            justify-content: center;
+        }
+        .op{
+            width: 50%;
+        }
+        .title_produ{
+            font-size: 20px;
+            color: #555;
+        }
+        .base{
+            background-color: #14364d;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding: 1px;   
+        }
+        .text_base{
+            width: 100%;
+            text-align: center;
+            text-align: center;
+            padding: 2px;
+
+        }
+        footer{
+            background-color: #0b171f;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+        h3{
+            color: white;
+            background-color: #0b171f;
+            font-size: 30px;
+            height: 50px;
+            font-family: 'Arial', sans-serif;
+        }
+        h1{
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .img_cab{
+            background-color: #003d52;
+            overflow: hidden;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+        }
+        .img_topo{
+            width: 100%;
+            top: 0px;
+        }
+        h2{
+            font-size: 30px;
+            font-family: 'Arial', sans-serif;
+        }
+        }
+
+        @media screen and (max-width: 500px) {
+            h1{
+                font-size: 30px;
+            }
+            nav{
+            gap: 1rem;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            h1{
+                font-size: 25px;
+            }
+            nav{
+            gap: 1rem;
+            }
+            .txt_menu{
+            font-size: 12px;
+            }
+            .img_opcoes{   
+            gap: 1rem;
+            }
+            .textos{
+                font-size: 15px;
+            }
+            .title_produ{
+            font-size: 12px;
+            }
+            .desc_produ{
+                font-size: 10px;
+            }
+
+        }
+        @media screen and (max-width: 400px) {
+            *{
+                margin: 0;
+            }
+            h1{
+                font-size: 20px;
+            }
+            h2{
+            font-size: 20px;
+        }
+            nav{
+            gap: 10px;
+            }
+            .txt_menu{
+            display: flex;
+            justify-content: space-between;
+            font-size: 600px;
+            text-decoration: none;
+            }
+            .img_opcoes{   
+            gap: 5px;
+            }
+            .textos{
+                font-size: 10px;
+            }
+            .title_produ{
+            font-size: 12px;
+            }
+            .desc_produ{
+                font-size: 10px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            .base_text{
+                font-size: 1px;
+            }
+            .footer{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="cab">
+            <div class="cabecalho">
+                <h1>Web Programming Course</h1>
+                <nav>
+                    <a class="txt_menu" href="https://www.codecademy.com/learn/introduction-to-javascript">PORTFOLIO</a>
+                    <a class="txt_menu" href="https://github.com/">ABOUT US</a>
+                    <a class="txt_menu" href="https://www.instagram.com/">CONTACT</a>
+                </nav>
+            </div>
+            <div class="img_cab">
+                <img class="img_topo" src="./assets.img/JS, HTML e CSS.jpg" alt="">
+            </div>
+        </div>
+
+        <section>
+            <h2>Desperte seu Potencial com nossos Cursos de Programação em JavaScript!</h2>
+            <p class="textos">Você já se imaginou criando aplicações incríveis, websites dinâmicos 
+                e conquistando o mundo da programação? Se a resposta é SIM, você está no lugar certo! 
+                <br/>
+                Neste curso oferecemos ferramentas desde o básico até o avançado, abordando todos os aspectos do JavaScript. 
+                Além disso, você será capaz de Desenvolver habilidades sólidas para se destacar no universo da programação.</p>
+        </section>
+        <section>
+            <div class="imgs_align">
+                <div class="img_opcoes">
+                    <div class="imgs">
+                        <img class="op" src="./assets.img/html.png" alt="">
+                        <p class="title_produ" style="font-family: 'Kanit', sans-serif;" >HTML</p>
+                        <p class="desc_produ" style="font-family: 'Kanit', sans-serif;" >Estruturação da página</p>
+                    </div>
+                    <div  class="imgs">
+                        <img class="op" src="./assets.img/css.png" alt="">
+                        <p class="title_produ" style="font-family: 'Kanit', sans-serif;" >CSS</p>
+                        <p class="desc_produ" style="font-family: 'Kanit', sans-serif;" >Estilização da página</p>
+                    </div>
+                    <div class="imgs">
+                        <img class="op" src="./assets.img/javascript.png" alt="">
+                        <p class="title_produ" style="font-family: 'Kanit', sans-serif;" >JAVASCRIPT</p>
+                        <p class="desc_produ" style="font-family: 'Kanit', sans-serif;" >Dinamicidade na página</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="base">
+            <h3>O VERDADEIRO UNIVERSO DA PROGRAMAÇÃO</h3>
+            <div class="text_base">
+                <p class="base_text" style="color: white; ">A linguagem de programação tem como objetivo principal 
+                fornecer uma forma estruturada e compreensível para que os humanos possam instruir os computadores a 
+                realizar tarefas específicas.
+                <br/>
+                Em resumo, as linguagens de programação são ferramentas 
+                essenciais que capacitam os desenvolvedores a criar software eficiente, confiável e inovador, permitindo 
+                que os computadores executem uma ampla gama de tarefas para atender às necessidades da sociedade e da indústria.
+                </p>
+            </div>
+        </section>
+        <footer><p class="footer">Copyright © andrewleifert92hot@gmail.com </p></footer>
+    </div>
+</body>
+</html>
